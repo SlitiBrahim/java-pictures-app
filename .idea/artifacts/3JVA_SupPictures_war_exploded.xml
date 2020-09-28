@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="3JVA-SupPictures:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/3JVA_SupPictures_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="3JVA-SupPictures/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="3JVA-SupPictures" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="JPA 2.0-JPA 2.0" />
+          <element id="library" level="project" name="Mojarra-1.2" />
+          <element id="library" level="project" name="Mojarra-1.2 (2)" />
+          <element id="library" level="project" name="mysql-connector-java-5.1.32-bin" />
+          <element id="library" level="project" name="Lib-JSTL" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

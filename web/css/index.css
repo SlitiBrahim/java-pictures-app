@@ -1,0 +1,127 @@
+header button{
+    display: inline-block;
+
+}
+
+:root {
+    font-size: 10px;
+}
+
+
+body {
+    min-height: 100vh;
+    background-color: #fafafa;
+    color: #262626;
+    padding-bottom: 3rem;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 93.5rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.banner{
+    background-color: #dadada;
+    margin: 100px auto 100px auto;
+}
+
+.info_table{
+    background-color: #999999;
+    width: 70%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    font-size: 2em;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -1rem -1rem;
+    padding-bottom: 3rem;
+}
+
+.gallery button{
+    position: relative;
+    cursor: pointer;
+    width: 80%;
+    height: 30px;
+    margin-top: 15px ;
+    background-color: crimson;
+    box-shadow: 0px 0px 20px 0px lightgrey;
+}
+
+.gallery-item {
+    position: relative;
+    flex: 1 0 22rem;
+    margin: 1rem;
+    cursor: pointer;
+    background-color: #D3D3D30a;
+    box-shadow: 0px 0px 20px 0px lightgrey;
+}
+
+.title {
+    height: 68px;
+    font-size: 30px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.title label {
+    white-space: pre-line;
+    word-wrap: break-word;
+}
+
+.description {
+    height: 68px;
+    font-size: 15px;
+    text-align: center;
+    overflow: hidden;
+}
+.description label {
+    white-space: pre-line;
+    word-wrap: break-word;
+}
+
+
+.gallery-item:hover .gallery-item-info,
+.gallery-item:focus .gallery-item-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.gallery-item-info {
+    display: none;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@supports (display: grid) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+        grid-gap: 2rem;
+    }
+
+    .gallery-item,
+    .gallery {
+        width: auto;
+        margin: 0;
+    }
+
+}
